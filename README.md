@@ -1,10 +1,13 @@
 # quilleditor
 
 > A Vue.js project
+ 扩展vue-quill-editor编辑器，实现图片自定义上传功能，可以启用vue-image-crop-upload实现上传图片裁切。
+ 使用时更改App.vue内的uploadUrl值为你的上传图片接口地址，响应的更改上传成功后获取的属性名称
 
 ## Build Setup
 
 ``` bash
+
 # install dependencies
 npm install
 
