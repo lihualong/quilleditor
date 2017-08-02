@@ -224,7 +224,7 @@
               }
               var self = this;
               var data = new FormData;
-              data.append(this.fileName, data,name);
+              data.append(this.fileName, fileInput.files[0],name);
               this.editor.focus();
               var xhr=new XMLHttpRequest();
               xhr.open('post',this.uploadUrl);
