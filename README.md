@@ -1,24 +1,5 @@
 # quilleditor
 
-> A Vue.js project
- 扩展vue-quill-editor编辑器，实现图片自定义上传功能，可以启用vue-image-crop-upload实现上传图片裁切。
- 使用时更改App.vue内的uploadUrl值为你的上传图片接口地址，响应的更改上传成功后获取的属性名称
+> 我们通常都会使用富文本编辑器在后台编辑内容，开发vue当然也少不了，我们通过vue官网的链接可以找到一些资源，或者去github上查找一些开源的编辑器。
+我使用的是vue-quill-editor，它的界面很简洁，功能也满足平时的编辑需要，不过于臃肿，但是它默认的图片上传是使用Data URL方式保存到了内容里，这不是我想要的，我相信大部分人也不想这样去保存图片，还好quill提供了如何去自定义按钮事件的demo(03-example.vue)，那么我们就可以自己去实现图片的保存方式了。
 
-## Build Setup
-
-``` bash
-
-# install dependencies
-npm install
-
-# serve with hot reload at localhost:8080
-npm run dev
-
-# build for production with minification
-npm run build
-
-# build for production and view the bundle analyzer report
-npm run build --report
-```
-
-For detailed explanation on how things work, checkout the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
